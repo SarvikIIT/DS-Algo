@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Graphs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Graphs\\questions\\buildingteams.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:questions\\buildingteams.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Graphs\\questions\\monsters.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:questions\\monsters.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "buildingteams.cpp",
-              "DocumentMoniker": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Graphs\\questions\\buildingteams.cpp",
-              "RelativeDocumentMoniker": "questions\\buildingteams.cpp",
-              "ToolTip": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Graphs\\questions\\buildingteams.cpp",
-              "RelativeToolTip": "questions\\buildingteams.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowF0AAAAEAAAAAAAAAA==",
+              "Title": "monsters.cpp",
+              "DocumentMoniker": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Graphs\\questions\\monsters.cpp",
+              "RelativeDocumentMoniker": "questions\\monsters.cpp",
+              "ToolTip": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Graphs\\questions\\monsters.cpp",
+              "RelativeToolTip": "questions\\monsters.cpp",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAUwG8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-10T08:58:12.367Z",
+              "WhenOpened": "2025-07-18T18:17:27.825Z",
               "EditorCaption": ""
             }
           ]
