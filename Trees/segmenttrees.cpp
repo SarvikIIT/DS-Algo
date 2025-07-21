@@ -37,6 +37,25 @@ int findQuery(int start_index, int end_index, int segment_index, int query_start
     return min(left, right);
 }
 
+void PointUpdate(int start_index, int end_index, int segment_index, int update_index, int new_value) {
+    if (start_index == end_index) {
+        segment_tree[segment_index] = new_value;
+        ar[update_index] = new_value;
+
+        return;
+    }
+
+    int mid = (start_index + end_index) / 2;
+    if (update_index <= mid)
+        PointUpdate(start_index, mid, 2 * segment_index, update_index, new_value);
+    else
+        PointUpdate(mid + 1, end_index, 2 * segment_index + 1, update_index, new_value);
+
+    segment_tree[segment_index] = min(segment_tree[2 * segment_index], segment_tree[2 * segment_index + 1]);
+}
+
+
+
 int32_t main() {
     int n;
     cin >> n;
