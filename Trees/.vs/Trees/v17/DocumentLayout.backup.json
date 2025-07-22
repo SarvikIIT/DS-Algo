@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\segmenttrees.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:segmenttrees.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\avl.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:avl.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\bst.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bst.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,45 +9,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "segmenttrees.cpp",
-              "DocumentMoniker": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\segmenttrees.cpp",
-              "RelativeDocumentMoniker": "segmenttrees.cpp",
-              "ToolTip": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\segmenttrees.cpp",
-              "RelativeToolTip": "segmenttrees.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-18T12:13:00.319Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "avl.cpp",
-              "DocumentMoniker": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\avl.cpp",
-              "RelativeDocumentMoniker": "avl.cpp",
-              "ToolTip": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\avl.cpp",
-              "RelativeToolTip": "avl.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwIEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-22T12:40:19.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "bst.cpp",
-              "DocumentMoniker": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\bst.cpp",
-              "RelativeDocumentMoniker": "bst.cpp",
-              "ToolTip": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Trees\\bst.cpp",
-              "RelativeToolTip": "bst.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-22T10:29:35.738Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
