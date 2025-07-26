@@ -269,17 +269,34 @@ template<typename T>
 inline void reverseVector(vector<T>& arr) { 
     reverse(all(arr)); 
 }
+
+int n,q;
+vi x;
+
 void solve() {
-    using ll = long long;
-    ll n;
-    cin >> n;
-    ll l = 0, r = 2e9;
-    while (r - l > 1) {
-        ll m = (l + r) / 2;
-        (m * (m + 1) / 2 <= n + 1 ? l : r) = m;
+    cin >> n >> q;
+    x.resize(n);
+    rep(i, 0, n) cin >> x[i];
+    SegmentTree st(x);
+
+    while (q--) {
+        int type;
+        cin >> type;
+        if (type == 1) {
+            int start,end,naya;
+            cin >> start>>end>>naya;
+            start--;end--;
+            int curr = st.rangeMin(start,end);
+            st.updateRange(start, end, naya + curr);
+        } else {
+            int a, b;
+            cin >> a >> b;
+            a--; b--;
+            cout << st.rangeMin(a, b) << endl;
+        }
     }
-    cout << n - l + 1 << endl;
 }
+
 
 signed main() {
     ios_base::sync_with_stdio(false);
@@ -289,7 +306,10 @@ signed main() {
     // precompute_factorials();
     
     int t = 1;
-   // cin >> t;
+    //cin >> t;
     while(t--) solve();
     return 0;
 }
+    
+    
+    

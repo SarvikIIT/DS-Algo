@@ -110,7 +110,7 @@ public:
     SegmentTree(vi& arr) {
         ar = arr;
         n = sz(arr);
-        segment_tree.resize(4 * n, INF);
+        segment_tree.resize(4 * n, 0); // For sum, use 0
         lazy.resize(4 * n, 0);
         buildTree(0, n - 1, 1);
     }
@@ -125,12 +125,12 @@ public:
         buildTree(start_index, mid, 2 * segment_index);
         buildTree(mid + 1, end_index, 2 * segment_index + 1);
 
-        segment_tree[segment_index] = min(segment_tree[2 * segment_index], segment_tree[2 * segment_index + 1]);
+        segment_tree[segment_index] = segment_tree[2 * segment_index] + segment_tree[2 * segment_index + 1];
     }
 
     void push(int node, int start, int end) {
         if (lazy[node] != 0) {
-            segment_tree[node] += lazy[node];
+            segment_tree[node] += (end - start + 1) * lazy[node];
             if (start != end) {
                 lazy[2 * node] += lazy[node];
                 lazy[2 * node + 1] += lazy[node];
@@ -150,13 +150,13 @@ public:
         int mid = (start + end) / 2;
         rangeUpdate(2 * node, start, mid, l, r, val);
         rangeUpdate(2 * node + 1, mid + 1, end, l, r, val);
-        segment_tree[node] = min(segment_tree[2 * node], segment_tree[2 * node + 1]);
+        segment_tree[node] = segment_tree[2 * node] + segment_tree[2 * node + 1];
     }
 
     int query(int start_index, int end_index, int segment_index, int query_start, int query_end) {
         push(segment_index, start_index, end_index);
         if (query_end < start_index || query_start > end_index)
-            return INF;
+            return 0; // For sum, return 0
         if (query_start <= start_index && end_index <= query_end)
             return segment_tree[segment_index];
 
@@ -164,10 +164,10 @@ public:
         int left = query(start_index, mid, 2 * segment_index, query_start, query_end);
         int right = query(mid + 1, end_index, 2 * segment_index + 1, query_start, query_end);
 
-        return min(left, right);
+        return left + right;
     }
     
-    int rangeMin(int l, int r) {
+    int rangeSum(int l, int r) {
         return query(0, n - 1, 1, l, r);
     }
     
@@ -176,109 +176,31 @@ public:
     }
 };
 
-class DSU {
-private:
-    vi parent, rank, size;
-    
-public:
-    DSU(int n) {
-        parent.resize(n);
-        rank.resize(n, 0);
-        size.resize(n, 1);
-        rep(i, 0, n) parent[i] = i;
-    }
-    
-    inline int find(int x) {
-        return parent[x] == x ? x : parent[x] = find(parent[x]);
-    }
-    
-    inline void unite(int x, int y) {
-        int px = find(x), py = find(y);
-        if (px == py) return;
-        
-        if (rank[px] < rank[py]) {
-            parent[px] = py;
-            size[py] += size[px];
-        } else if (rank[px] > rank[py]) {
-            parent[py] = px;
-            size[px] += size[py];
+int n, q;
+vi x;
+
+void solve() {
+    cin >> n >> q;
+    x.resize(n);
+    rep(i, 0, n) cin >> x[i];
+    SegmentTree st(x);
+
+    while (q--) {
+        int type;
+        cin >> type;
+        if (type == 1) {
+            int old, naya;
+            cin >> old >> naya;
+            old--;
+            int curr = st.rangeSum(old, old);
+            st.updateRange(old, old, naya - curr);
         } else {
-            parent[py] = px;
-            rank[px]++;
-            size[px] += size[py];
+            int a, b;
+            cin >> a >> b;
+            a--; b--;
+            cout << st.rangeSum(a, b) << endl;
         }
     }
-    
-    inline bool same(int x, int y) {
-        return find(x) == find(y);
-    }
-    
-    inline int getSize(int x) {
-        return size[find(x)];
-    }
-};
-
-inline bool isPalindrome(string s) {
-    int n = sz(s);
-    rep(i, 0, n/2) if(s[i] != s[n-1-i]) return false;
-    return true;
-}
-
-inline string toBinary(int n) {
-    string binary = "";
-    while (n > 0) {
-        binary = char('0' + n % 2) + binary;
-        n /= 2;
-    }
-    return binary.empty() ? "0" : binary;
-}
-
-inline int fromBinary(string binary) {
-    int num = 0;
-    for (char c : binary) {
-        num = num * 2 + (c - '0');
-    }
-    return num;
-}
-
-inline bool isValid(int i, int j, int n, int m) {
-    return i >= 0 && i < n && j >= 0 && j < m;
-}
-
-const vi dx = {-1, 0, 1, 0, -1, -1, 1, 1};
-const vi dy = {0, 1, 0, -1, -1, 1, -1, 1};
-
-inline int countBits(int n) {
-    return __builtin_popcountll(n);
-}
-
-inline int lowestBit(int n) {
-    return n & (-n);
-}
-
-inline bool isPowerOfTwo(int n) {
-    return n && !(n & (n - 1));
-}
-
-template<typename T>
-inline void sortVector(vector<T>& arr) { 
-    sort(all(arr)); 
-}
-
-template<typename T>
-inline void reverseVector(vector<T>& arr) { 
-    reverse(all(arr)); 
-}
-void solve() {
-    using ll = long long;
-    ll n;
-    cin >> n;
-    ll l = 0, r = 2e9;
-    while (r - l > 1) {
-        ll m = (l + r) / 2;
-        (m * (m + 1) / 2 <= n + 1 ? l : r) = m;
-    }
-    cout << n - l + 1 << endl;
 }
 
 signed main() {
@@ -289,7 +211,7 @@ signed main() {
     // precompute_factorials();
     
     int t = 1;
-   // cin >> t;
+    //cin >> t;
     while(t--) solve();
     return 0;
 }
