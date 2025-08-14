@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Mathematics\\FactorsinLogN.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mathematics\\FactorsinLogN.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Mathematics\\SegmentedSieve.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mathematics\\SegmentedSieve.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FactorsinLogN.cpp",
+              "DocumentMoniker": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Mathematics\\FactorsinLogN.cpp",
+              "RelativeDocumentMoniker": "Mathematics\\FactorsinLogN.cpp",
+              "ToolTip": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Mathematics\\FactorsinLogN.cpp",
+              "RelativeToolTip": "Mathematics\\FactorsinLogN.cpp",
+              "ViewState": "AgIAABEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-27T13:22:34.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SegmentedSieve.cpp",
+              "DocumentMoniker": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Mathematics\\SegmentedSieve.cpp",
+              "RelativeDocumentMoniker": "Mathematics\\SegmentedSieve.cpp",
+              "ToolTip": "C:\\Users\\sarvi\\OneDrive\\Desktop\\Quant\\DS-Algo\\Mathematics\\SegmentedSieve.cpp",
+              "RelativeToolTip": "Mathematics\\SegmentedSieve.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-27T13:09:40.706Z",
+              "EditorCaption": ""
             }
           ]
         }

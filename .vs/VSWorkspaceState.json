@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Graphs",
+    "\\Graphs\\questions",
+    "\\Mathematics"
   ],
+  "SelectedNode": "\\Graphs\\questions\\kefaandcat.cpp",
   "PreviewInSolutionExplorer": false
 }

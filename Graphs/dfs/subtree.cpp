@@ -15,9 +15,7 @@ void dfs(int root,int parent){
     for(auto child:arr[root]){
         if(child==parent)continue;
         dfs(child,root);
-        
-            subsize[root]+=subsize[child];
-        
+        subsize[root]+=subsize[child];
     }
 }
 
