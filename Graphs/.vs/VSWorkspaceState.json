@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\advanced",
+    "\\bfs",
     "\\dfs"
   ],
-  "SelectedNode": "\\dfs\\subtree.cpp",
+  "SelectedNode": "\\advanced\\dist_bw_twonodesinlogn.cpp",
   "PreviewInSolutionExplorer": false
 }
