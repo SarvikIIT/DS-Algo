@@ -316,7 +316,7 @@ void solve() {
     dp[1] = 0; // steps to reach 1 from 1 is 0
     dp[2] = 1; // both floor and ceil of 2 is 1 hence...
 
-    // trailin gbit one so the case is :
+    // trailing bit one so the case is :
     for (long long i = 2; i <= val; ++i) {
         if ((i & 1LL) == 0) {
             dp[i] = add(1, dp[i >> 1]);
